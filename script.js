@@ -8,3 +8,14 @@ const lunch = ['Vegan chickpea curry jacket potatoes', 'Salmon salad with sesame
 const dinner = ['Creamy Chicken Soup', 'Stovetop Burgers', 'Crockpot Chicken Breast Recipe', 'Birria Tacos'
 , 'Chili Mac Recipe', 'Air Fryers Chicken Thighs', 'Baked Ranch Chicken with Bacon', 'Crockpot Taco Soup'
 , 'Homemade Alfredo Sauce', 'Oven Fried Chicken Breast'];
+
+const createTheMessage = (breakfast, lunch, dinner) => {
+    todayBreakfast = breakfast[Math.floor(Math.random() * breakfast.length)];
+    todayLunch = lunch[Math.floor(Math.random() * lunch.length)];
+    todayDinner = dinner[Math.floor(Math.random() * dinner.length)];
+
+    console.log(`Your menu today is: ${todayBreakfast} for breakfast, ${todayLunch} for lunch and ${todayDinner} for 
+    dinner.`);
+}
+
+createTheMessage(breakfast, lunch, dinner);

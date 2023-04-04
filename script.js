@@ -15,7 +15,7 @@ const createTheMessage = (breakfast, lunch, dinner) => {
     todayDinner = dinner[Math.floor(Math.random() * dinner.length)];
 
     console.log(`Your menu today is: ${todayBreakfast} for breakfast, ${todayLunch} for lunch and ${todayDinner} for 
-    dinner.`);
+dinner.`);
 }
 
 createTheMessage(breakfast, lunch, dinner);
